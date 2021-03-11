@@ -5,7 +5,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class CadastroPessoa {
+public class CadastroPessoaFeture {
 	
 	@Given("^que eu cadastre a Api \"([^\"]*)\"$")
 	public void que_eu_cadastre_a_Api(String arg1) throws Throwable {

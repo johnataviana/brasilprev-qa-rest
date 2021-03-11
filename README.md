@@ -3,7 +3,7 @@ Este é um projeto com estrutura Cucumber para automatizar APIs Rest.
 
 ## Inicialização
 Esta stack utiliza as seguintes ferramentas:
-1. [Java](https://rest-assured.io/)
+1. [Java](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html)
 2. [Cucumber](https://cucumber.io/)
 3. [Eclipse](https://www.eclipse.org/)
 4.  [Biblioteca Rest-Assured](https://git-scm.com/download/win)
