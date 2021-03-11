@@ -11,7 +11,7 @@ Esta stack utiliza as seguintes ferramentas:
 ### Instalação
 Clone o projeto utilizando o comando
 
-git clone git@github.com (johnataviana/brasilprev-qa-rest.git)
+git clone: (https://github.com/johnataviana)
 
 ## Configuração do Ambiente
 
