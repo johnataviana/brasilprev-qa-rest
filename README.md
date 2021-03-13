@@ -83,5 +83,6 @@ Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e C
 		    <scope>test</scope>
 	</dependency>
 
+![image](https://user-images.githubusercontent.com/71906839/111039377-8faebe80-840c-11eb-9e5c-0b6c7ae63266.png)
 
 
