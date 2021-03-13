@@ -89,10 +89,10 @@ Scenario: Validar cadastro de pessoa
  
 Given que eu cadastre a Api "inserir cadastro de pessoa" 
 When preencher os dados necessarios "CPF, DDD e telefone"
-Then terei um cadastro de pessoa criado 
+Então terei um cadastro de pessoa criada
+![Fature 1](https://user-images.githubusercontent.com/71906839/111041721-66942b00-8418-11eb-9b81-279a97ec794b.JPG)
 
-
-Scenario: Validar cadastro de pessoa com mesmo CPF "deve apresentar falha"
+Cenário: Validar cadastro de pessoa com mesmo CPF "deve apresentar falha"
 Given que eu cadastre Api "cadastra pessoa com mesmo  CPF"
 When preencher o atributo de cadastro de pessoa com mesmo CPF
 Then terei um cadastro de pessoa com falha
