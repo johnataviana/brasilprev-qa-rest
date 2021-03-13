@@ -82,5 +82,3 @@ Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e C
 		    <version>5.6.0</version>
 		    <scope>test</scope>
 	</dependency>
-
-
