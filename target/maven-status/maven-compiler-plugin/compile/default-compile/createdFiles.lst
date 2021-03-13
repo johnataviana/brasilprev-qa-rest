@@ -1,0 +1,11 @@
+br\com\brasilprev\geradoresMassa\GeradorNome.class
+br\com\brasilprev\annotations\AfterSuite.class
+br\com\brasilprev\geradoresMassa\GeradorCpf.class
+br\com\brasilprev\restAssured\CadastroPessoa.class
+br\com\brasilprev\dto\EnderecoDto.class
+br\com\brasilprev\restAssured\PessoaTest.class
+br\com\brasilprev\geradoresMassa\GeradorCNPJ.class
+br\com\brasilprev\geradoresMassa\GeradorRg.class
+br\com\brasilprev\annotations\BeforeSuite.class
+br\com\brasilprev\dto\PessoaDto.class
+br\com\brasilprev\dto\TelefoneDto.class

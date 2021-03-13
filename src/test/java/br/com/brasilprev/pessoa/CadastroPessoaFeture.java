@@ -188,7 +188,7 @@ public class CadastroPessoaFeture {
 	}
 
 	@Then("^foi reportado um Bug$")
-	public void foi_reportado_um_Bug() throws Throwable {
+	public void foi_reportadoum_Bug() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 	    throw new PendingException();
 

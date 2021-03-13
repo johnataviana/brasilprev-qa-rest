@@ -52,7 +52,8 @@ And foi reportado um bug
 
 @RegressivoCadastroPessoa
 @CadastrarPessoa
-Scenario: Cadastro de pessoa sem DDD e telefone "deve apresentar falha"
+ e3~
+ Scenario: Cadastro de pessoa sem DDD e telefone "deve apresentar falha"
 Given que cadastre a Api pessoa sem DDD e telefone
 When preencher o atributo de cadastro de pessoa sem DDD e telefone
 Then não deveria cadastrar sem DDD e telefone

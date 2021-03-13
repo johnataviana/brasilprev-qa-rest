@@ -10,34 +10,22 @@ Esta stack utiliza as seguintes ferramentas:
 
 ### Instalação
 Clone o projeto utilizando o comando
-
 git clone: (https://github.com/johnataviana)
 
 ## Configuração do Ambiente
-
 Instale o Plugin do Cucumber pele Eclipse Marketplace
-
 Após instalação Import o projeto pelo Eclipse File --> Import --> Maven Exisint Project
-
 Após importar o projeto vá em Maven -> Update Project
-
-
-# Executando os Testes
-
-
 Após a instalação das dependências e configuração do ambiente, vamos executar os testes.
 
+# Executando os Testes
 Pré requisito que o serviço esteja ativado.
-
-1. mvn clean install
-
-Para executar os testes;
 
 1. Executar pelo JUnit.
 
 Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e Cenarios usando o Cucumber.
 
-2. Existe uma automação feita usando rest-assured para criação de cadstros em massa esta configurada o default de criação de 50 contas inicialmente.
+2. Existe uma automação feita usando rest-assured para criação de cadastros em massa esta configurada o default de criação de 50 contas inicialmente.
    Caso necessário aumentar ou diminuir a iteração para gerar mas ou menos dados.
 
 
@@ -83,5 +71,76 @@ Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e C
 		    <scope>test</scope>
 	</dependency>
 
+Agora vamos executar os testes:
+
+Pré requisito que o serviço esteja ativado.
+
+cucumber
+
+info.cukes cucumber-java 1.2.5 
+info.cukes cucumber-junit 1.1.2 test 
+info.cukes gherkin 2.12.2 
+io.cucumber cucumber-core 4.2.2
+io.cucumber cucumber-junit 5.6.0 test
+
+Abra o projeto com o seu editor:
+Abra a sub-pasta/features/IncluirPessoa.feature
+Scenario: Validar cadastro de pessoa
+
+ 
+Given que eu cadastre a Api "inserir cadastro de pessoa" 
+When preencher os dados necessarios "CPF, DDD e telefone"
+Then terei um cadastro de pessoa criado 
 
 
+Scenario: Validar cadastro de pessoa com mesmo CPF "deve apresentar falha"
+Given que eu cadastre Api "cadastra pessoa com mesmo  CPF"
+When preencher o atributo de cadastro de pessoa com mesmo CPF
+Then terei um cadastro de pessoa com falha
+
+Scenario: Cadastra duas pessoas com CPF difente, mesmo DDD e telefone "deve apresentar falha"
+Given que eu cadastre Api "cadastra duas pessoas com CPF diferente, mesmo DDD e telefone" 
+When preencher o atributo de cadastro de duas pessoa com CPF diferente, mesmo DDD e telefone
+Then terei um cadastro de pessoa com falha
+And já existe pessoa cadastrada com o mesmo DDD e telefone
+
+Scenario: Cadastra pessoa sem CPF, "deve apresentar falha"
+Given que cadastre a Api, pessoa sem CPF
+When preencher o atributo de cadastro de pessoa sem CPF
+Then não deveria cadastra a pessoa
+And o sistema cadastrou pessoa sem CPF
+And foi reportado um BUG
+
+Scenario: Cadastro de pessoa com CPF irregular, "deve apresentar falha"
+Given que eu cadastre a Api "pessoa com CPF irregular"
+When preencher o atributo de  cadastro de pessoa com CPF com "caracteres, simbolos, letras e digito a mais"
+Then terei um cadastro com falha
+And o sistema não detalhou erro de caracteres, simbolos, letras e digito a mais no CPF
+
+Scenario: Cadastro de pessoa sem DDD "deve apresentar falha"
+Given que cadastre a Api "pessoa sem DDD"
+When preencher o atributo de cadastro de pessoa sem DDD
+Then nao deveria cadastrar sem DDD
+And o sistema cadastrou pessoa sem DDD
+And foi reportado um bug
+
+Scenario: Cadastro de pessoa sem DDD e telefone "deve apresentar falha"
+Given que cadastre a Api pessoa sem DDD e telefone
+When preencher o atributo de cadastro de pessoa sem DDD e telefone
+Then não deveria cadastrar sem DDD e telefone
+And o sistema cadastrou pessoasem DDD e telefone
+And foi reportado um BUG
+
+Scenario: Cadastro de pessoa sem telefone "deve apresentar falha"
+Given que eu cadastre a Api pessoa sem telefone
+When preencher o atributo de cadastro de pessoa sem telefone
+Then Deveriater um cadastro com falha 
+And o sistema cadastrou pessoa sem telefone 
+And foi reportadoum bug
+
+Scenario: Realizar cadastro de pessoa com CPF alfanumerico "deve apresentar falha"
+Given que eu cadastre a Api pessoa com CPF alfanumerico
+When preencher o atributo de cadastro pessoa com CPF alfanumerico
+Then deveria ter um cadastro com falha
+And o sistema cadastrou pessoa  com CPF alfanumérico					
+And foi reportado um Bug
