@@ -70,6 +70,7 @@ Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e C
 		    <version>5.6.0</version>
 		    <scope>test</scope>
 	</dependency>
+<<<<<<< HEAD
 
 Agora vamos executar os testes:
 
@@ -144,3 +145,5 @@ When preencher o atributo de cadastro pessoa com CPF alfanumerico
 Then deveria ter um cadastro com falha
 And o sistema cadastrou pessoa  com CPF alfanumérico					
 And foi reportado um Bug
+=======
+>>>>>>> 9e2c279ab6f0f22b5890112c3f5fa96037dcf7d9
