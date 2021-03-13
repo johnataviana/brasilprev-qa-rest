@@ -28,8 +28,6 @@ Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e C
 2. Existe uma automação feita usando rest-assured para criação de cadastros em massa esta configurada o default de criação de 50 contas inicialmente.
    Caso necessário aumentar ou diminuir a iteração para gerar mas ou menos dados.
 
-
-
 # Bibliotecas Utilizadas e configuradas no pom.xml
 
 1. rest-assure
@@ -145,5 +143,3 @@ When preencher o atributo de cadastro pessoa com CPF alfanumerico
 Then deveria ter um cadastro com falha
 And o sistema cadastrou pessoa  com CPF alfanumérico					
 And foi reportado um Bug
-=======
->>>>>>> 9e2c279ab6f0f22b5890112c3f5fa96037dcf7d9
