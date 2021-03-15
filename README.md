@@ -159,4 +159,6 @@ Then deveria ter um cadastro com falha
 And o sistema cadastrou pessoa  com CPF alfanumérico					
 And foi reportado um Bug
 
+#### AUTOMAÇÃO DE DADOS REALIZADO COM SUCESSO
+
 ### SOLICITAÇÃO DE TESTE REALIZADO COM SUCESSO!
