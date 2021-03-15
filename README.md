@@ -1,13 +1,13 @@
 ### Avaliação - Testes/Serviços
 
-## Instruções: Baixe o projeto que está localizado (https://github.com/rommelweb/Brasilprev-qa-test-master
+#### Instruções: Baixe o projeto que está localizado (https://github.com/rommelweb/Brasilprev-qa-test-master
 
-## A API estará disponível através do endereço: LOCALHOST:8080
+#### A API estará disponível através do endereço: LOCALHOST:8080
 
-Este é um projeto com estrutura Cucumber para automatizar APIs Rest usando rest-assured.
+#### Este é um projeto com estrutura Cucumber para automatizar APIs Rest usando rest-assured.
 
-## Inicialização
-## Esta stack utiliza as seguintes ferramentas:
+#### Inicialização
+#### Esta stack utiliza as seguintes ferramentas:
 1. [Java](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html)
 2. [Cucumber](https://cucumber.io/)
 3. [Eclipse](https://www.eclipse.org/)
