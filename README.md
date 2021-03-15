@@ -1,4 +1,8 @@
 # Avaliação - Testes/Serviços
+
+Instruções: Baixe o projeto que está localizado (https://github.com/rommelweb/Brasilprev-qa-test-master
+A API estará disponível através do endereço: LOCALHOST:8080
+
 Este é um projeto com estrutura Cucumber para automatizar APIs Rest usando rest-assured.
 
 ## Inicialização
@@ -19,11 +23,14 @@ Após importar o projeto vá em Maven -> Update Project
 Após a instalação das dependências e configuração do ambiente, vamos executar os testes.
 
 # Executando os Testes
+
+Linguagem JAVA e o framework BDD
+
 Pré requisito que o serviço esteja ativado.
 
 1. Executar pelo JUnit.
 
-Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e Cenarios usando o Cucumber.
+Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e Cenários usando o Cucumber.
 
 2. Existe uma automação feita usando rest-assured para criação de cadastros em massa esta configurada o default de criação de 50 contas inicialmente.
    Caso necessário aumentar ou diminuir a iteração para gerar mas ou menos dados.
@@ -84,60 +91,59 @@ io.cucumber cucumber-junit 5.6.0 test
 
 Abra o projeto com o seu editor:
 Abra a sub-pasta/features/IncluirPessoa.feature
-Scenario: Validar cadastro de pessoa
 
- 
+Scenário 1: Validar cadastro de pessoa
 Given que eu cadastre a Api "inserir cadastro de pessoa" 
-When preencher os dados necessarios "CPF, DDD e telefone"
+When preencher os dados necessários "CPF, DDD e telefone"
 Então terei um cadastro de pessoa criada
-![Fature 1](https://user-images.githubusercontent.com/71906839/111041721-66942b00-8418-11eb-9b81-279a97ec794b.JPG)
 
-Cenário: Validar cadastro de pessoa com mesmo CPF "deve apresentar falha"
+
+Scenário 2: Validar cadastro de pessoa com mesmo CPF "deve apresentar falha"
 Given que eu cadastre Api "cadastra pessoa com mesmo  CPF"
 When preencher o atributo de cadastro de pessoa com mesmo CPF
 Then terei um cadastro de pessoa com falha
 
-Scenario: Cadastra duas pessoas com CPF difente, mesmo DDD e telefone "deve apresentar falha"
+Scenário 3: Cadastra duas pessoas com CPF difente, mesmo DDD e telefone "deve apresentar falha"
 Given que eu cadastre Api "cadastra duas pessoas com CPF diferente, mesmo DDD e telefone" 
 When preencher o atributo de cadastro de duas pessoa com CPF diferente, mesmo DDD e telefone
 Then terei um cadastro de pessoa com falha
 And já existe pessoa cadastrada com o mesmo DDD e telefone
 
-Scenario: Cadastra pessoa sem CPF, "deve apresentar falha"
+Scenário 4: Cadastra pessoa sem CPF, "deve apresentar falha"
 Given que cadastre a Api, pessoa sem CPF
 When preencher o atributo de cadastro de pessoa sem CPF
 Then não deveria cadastra a pessoa
 And o sistema cadastrou pessoa sem CPF
 And foi reportado um BUG
 
-Scenario: Cadastro de pessoa com CPF irregular, "deve apresentar falha"
+Scenário 5: Cadastro de pessoa com CPF irregular, "deve apresentar falha"
 Given que eu cadastre a Api "pessoa com CPF irregular"
 When preencher o atributo de  cadastro de pessoa com CPF com "caracteres, simbolos, letras e digito a mais"
 Then terei um cadastro com falha
 And o sistema não detalhou erro de caracteres, simbolos, letras e digito a mais no CPF
 
-Scenario: Cadastro de pessoa sem DDD "deve apresentar falha"
+Scenário 6: Cadastro de pessoa sem DDD "deve apresentar falha"
 Given que cadastre a Api "pessoa sem DDD"
 When preencher o atributo de cadastro de pessoa sem DDD
 Then nao deveria cadastrar sem DDD
 And o sistema cadastrou pessoa sem DDD
 And foi reportado um bug
 
-Scenario: Cadastro de pessoa sem DDD e telefone "deve apresentar falha"
+Scenário 7: Cadastro de pessoa sem DDD e telefone "deve apresentar falha"
 Given que cadastre a Api pessoa sem DDD e telefone
 When preencher o atributo de cadastro de pessoa sem DDD e telefone
 Then não deveria cadastrar sem DDD e telefone
 And o sistema cadastrou pessoasem DDD e telefone
 And foi reportado um BUG
 
-Scenario: Cadastro de pessoa sem telefone "deve apresentar falha"
+Scenário 8: Cadastro de pessoa sem telefone "deve apresentar falha"
 Given que eu cadastre a Api pessoa sem telefone
 When preencher o atributo de cadastro de pessoa sem telefone
 Then Deveriater um cadastro com falha 
 And o sistema cadastrou pessoa sem telefone 
-And foi reportadoum bug
+And foi reportado um bug
 
-Scenario: Realizar cadastro de pessoa com CPF alfanumerico "deve apresentar falha"
+Scenário 9: Realizar cadastro de pessoa com CPF alfanumerico "deve apresentar falha"
 Given que eu cadastre a Api pessoa com CPF alfanumerico
 When preencher o atributo de cadastro pessoa com CPF alfanumerico
 Then deveria ter um cadastro com falha
