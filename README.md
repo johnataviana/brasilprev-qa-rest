@@ -1,4 +1,4 @@
-      ### Avaliação - Testes/Serviços
+### Avaliação - Testes/Serviços
 
 #### Instruções: Baixe o projeto que está localizado (https://github.com/rommelweb/Brasilprev-qa-test-master
 
