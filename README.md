@@ -1,6 +1,7 @@
 # Avaliação - Testes/Serviços
 
 Instruções: Baixe o projeto que está localizado (https://github.com/rommelweb/Brasilprev-qa-test-master
+
 A API estará disponível através do endereço: LOCALHOST:8080
 
 Este é um projeto com estrutura Cucumber para automatizar APIs Rest usando rest-assured.
@@ -10,7 +11,7 @@ Esta stack utiliza as seguintes ferramentas:
 1. [Java](https://www.oracle.com/br/java/technologies/javase/javase-jdk8-downloads.html)
 2. [Cucumber](https://cucumber.io/)
 3. [Eclipse](https://www.eclipse.org/)
-4.  [Biblioteca Rest-Assured](https://rest-assured.io/)
+4. [Biblioteca Rest-Assured](https://rest-assured.io/)
 
 ### Instalação
 Clone o projeto utilizando o comando
@@ -149,3 +150,5 @@ When preencher o atributo de cadastro pessoa com CPF alfanumerico
 Then deveria ter um cadastro com falha
 And o sistema cadastrou pessoa  com CPF alfanumérico					
 And foi reportado um Bug
+
+SOLICITAÇÃO DE TESE REALIZADO COM SUCESSO!
