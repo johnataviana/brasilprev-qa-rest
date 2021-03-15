@@ -26,15 +26,15 @@ Após a instalação das dependências e configuração do ambiente, vamos execu
 
 #### Executando os Testes
 
-#### Linguagem JAVA e o framework BDD
+Linguagem JAVA e o framework BDD
 
 #### Pré requisito que o serviço esteja ativado.
 
-#### 1. Executar pelo JUnit.
+1. Executar pelo JUnit.
 
-#### Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e Cenários usando o Cucumber.
+Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e Cenários usando o Cucumber.
 
-#### 2. Existe uma automação feita usando rest-assured para criação de cadastros em massa esta configurada o default de criação de 50 contas inicialmente.
+2. Existe uma automação feita usando rest-assured para criação de cadastros em massa esta configurada o default de criação de 50 contas inicialmente.
    Caso necessário aumentar ou diminuir a iteração para gerar mas ou menos dados.
 
 #### Bibliotecas Utilizadas e configuradas no pom.xml
