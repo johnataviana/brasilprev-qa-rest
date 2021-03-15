@@ -85,9 +85,9 @@ Rodar a classe CadastroPessoaFeture.java classe criada a partir das Features e C
 
 #### cucumber
 
-info.cukes cucumber-java 1.2.5 
-info.cukes cucumber-junit 1.1.2 test 
-info.cukes gherkin 2.12.2 
+info.cukes cucumber-java 1.2.5
+info.cukes cucumber-junit 1.1.2 test
+info.cukes gherkin 2.12.2
 io.cucumber cucumber-core 4.2.2
 io.cucumber cucumber-junit 5.6.0 test
 
