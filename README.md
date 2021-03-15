@@ -157,6 +157,8 @@ Given que eu cadastre a Api pessoa com CPF alfanumerico
 When preencher o atributo de cadastro pessoa com CPF alfanumerico
 Then deveria ter um cadastro com falha
 And o sistema cadastrou pessoa  com CPF alfanumérico					
-And foi reportado um Bug
+E foi reportado um Bug
+
+
 
 ### SOLICITAÇÃO DE TESTE REALIZADO COM SUCESSO!
